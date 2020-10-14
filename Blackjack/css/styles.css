@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body .scoreboard {
+  width: 100%;
+}
+
+body .scoreboard .player {
+  text-align: left;
+}
+
+body .scoreboard .house {
+  text-align: right;
+}
+
+body .scoreboard #acehand {
+  visibility: hidden;
+}
+
+body .game .cards {
+  width: 100%;
+}
+
+body .game #result {
+  position: absolute;
+  top: 800px;
+  left: 45%;
+  right: 55%;
+  visibility: hidden;
+  background-color: gold;
+}
+
+body .game .buttons {
+  padding: 10px;
+  margin: 15px;
+  background-color: red;
+  color: black;
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */

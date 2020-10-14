@@ -1,0 +1,44 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    .scoreboard {
+        width: 100%;
+        .player {
+            text-align: left;
+        }
+        .house {
+            text-align: right;
+        }
+        #acehand {
+            visibility: hidden;
+        }
+    }
+    .game {
+        .cards {
+            width: 100%;
+        }
+        #result {
+            position: absolute;
+            top: 800px;
+            left: 45%;
+            right: 55%;
+            visibility: hidden;
+            background-color: gold;
+        }
+        .buttons {
+            padding: 10px;
+            margin: 15px;
+            background-color: red;
+            color: black;
+            font-size: 60px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    }
+}
