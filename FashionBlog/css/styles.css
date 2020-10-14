@@ -1,0 +1,167 @@
+@font-face {
+  font-family: future-poster;
+  src: url(ftpstrps.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.images {
+  position: fixed;
+  -ms-flex-line-pack: left;
+      align-content: left;
+  height: 400px;
+  width: 400px;
+  z-index: 1;
+}
+
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  font-family: future-poster;
+}
+
+.nav a {
+  padding: 3px 3px 3px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #818181;
+}
+
+.nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+  padding-right: 50px;
+}
+
+.nav ul > li {
+  padding-top: 50px;
+}
+
+.slidenav {
+  color: white;
+  font-size: 40px;
+  z-index: 1;
+  text-align: right;
+  top: 20px;
+  right: 0;
+  padding-right: 50px;
+}
+
+.main {
+  -webkit-transition: margin-right .5s;
+  transition: margin-right .5s;
+  padding: 20px;
+}
+
+.top {
+  position: relative;
+  top: 0px;
+}
+
+.top #mainimg {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.top p {
+  font-size: 72px;
+  text-align: center;
+  font-family: future-poster;
+  color: #7F7F7F;
+  padding: 850px;
+}
+
+.featuredsection {
+  position: relative;
+  width: 100%;
+  margin: 20px;
+  padding-bottom: 500px;
+  background-color: #7F7F7F;
+}
+
+.featuredsection .topicheader {
+  background-color: #7F7F7F;
+}
+
+.featuredsection .topicheader p {
+  font-family: future-poster;
+  font-size: 110px;
+  text-align: center;
+  padding: 100px;
+}
+
+.featuredsection .featured {
+  height: 100%;
+  width: 33%;
+  border: solid 15px black;
+  float: left;
+}
+
+.table {
+  position: relative;
+  top: 600px;
+  margin-top: 60px;
+  padding-bottom: 500px;
+}
+
+.table .content {
+  width: 100%;
+}
+
+.table .content tr {
+  padding: 15px;
+}
+
+.table .content .contentimg {
+  height: 850px;
+  width: 100%;
+}
+
+.table .content .contentimg :hover {
+  color: overlay;
+}
+
+.table p {
+  color: #7F7F7F;
+  font-size: 60px;
+  text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+  .nav {
+    padding-top: 15px;
+  }
+  .nav a {
+    font-size: 18ipx;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

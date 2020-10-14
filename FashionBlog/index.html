@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fashion Blog</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/52d5a7ab3f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <img class="images" id="logo" src="images/logo.png" alt="placeholder" title="img">
+            <nav class="nav" id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Featured</a></li>
+                    <li><a href="index.html">Style Guide</a></li>
+                    <li><a href="index.html">Latest</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slidenav">
+            <span onclick="openNav()"><i class="fas fa-bars" id="slidenav"></i></span>
+        </div>
+        <div class="main" id="main">
+            <div class="top">
+                <img src="images/mainimg.jpg" id="mainimg" width="800px" height="300px">
+                <p id="demo">Tell the world what you intend to do, but first show it.</p>
+            </div>
+            <div class="featuredsection">
+                <div class="topicheader">
+                    <p>Featured Outfits</p>
+                </div>
+                <div class="featuredimages">
+                    <div class="featured">
+                        <img src="images/featured1.jpg" alt="outfit1" id="featured1">
+                    </div>
+                    <div class="featured">
+                        <img src="images/featured2.jpg" alt="outfit2" id="featured2">
+                    </div>
+                    <div class="featured">
+                        <img src="images/featured3.jpg" alt="outfit3" id="featured3">
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <table class="content">
+                    <tr>
+                        <td>
+                            <p>Style Boards</p>
+                        </td>
+                        <td>
+                            <img src="images/content1.jpg" class="contentimg" id="topic1">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="images/content2.jpg" class="contentimg" id="topic2">
+                        </td>
+                        <td>
+                            <p>Building Your Personal Wardrobe</p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <p>Formal Wear</p>
+                        </td>
+                        <td>
+                            <img src="images/content3.jpg" class="contentimg" id="topic3">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="images/content4.jpg" class="contentimg" id="topic4">
+                        </td>
+                        <td>
+                            <p>Accessory Guide</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@font-face {
+    font-family: future-poster;
+    src: url(ftpstrps.ttf);
+
+}
+$font: future-poster;
+$fontcolor: #7F7F7F;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.images {
+    position: fixed;
+    align-content: left;
+    height: 400px;
+    width: 400px;
+    z-index: 1;
+}
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+    font-family: $font;
+    a {
+        padding: 3px 3px 3px 32px;
+        text-decoration: none;
+        font-size: 40px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    a:hover {
+        color: #818181;
+    }
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 36px;
+        padding-right: 50px;
+    }
+    ul > li {
+        padding-top: 50px;
+    }
+}
+.slidenav {
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+    text-align: right;
+    top: 20px;
+    right: 0;
+    padding-right: 50px;
+}
+.main {
+    transition: margin-right .5s;
+    padding: 20px;
+}
+
+.top {
+    position: relative;
+    top: 0px;
+    #mainimg {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    p {
+        font-size: 72px;
+        text-align: center;
+        font-family: $font;
+        color: $fontcolor;
+        padding: 850px;
+    }
+}
+
+.featuredsection {
+    position: relative;
+    width: 100%;
+    margin: 20px;
+    padding-bottom: 500px;
+    background-color: #7F7F7F;
+    .topicheader {
+        background-color: #7F7F7F;
+        p {
+            font-family: $font;
+            font-size: 110px;
+            text-align: center;
+            padding: 100px;
+        }
+    }
+    .featured {
+        height: 100%;
+        width: 33%;
+        border: solid 15px black;
+        float: left;
+    }
+}
+
+.table {
+    position: relative;
+    top: 600px;
+    margin-top: 60px;
+    padding-bottom: 500px;
+    .content {
+        width: 100%;
+        tr {
+            padding: 15px;
+        }
+        .contentimg{
+            height: 850px;
+            width: 100%;
+            :hover {
+                color: overlay;
+            }
+        }
+    }
+    p{
+        color: $fontcolor;
+        font-size: 60px;
+        text-align: center;
+    }
+}
+@media screen and (max-height: 450px) {
+    .nav {padding-top: 15px;}
+    .nav a {font-size: 18ipx;}
+}
