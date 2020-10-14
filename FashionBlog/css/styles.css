@@ -120,8 +120,8 @@ body {
 }
 
 .featuredsection .featured {
-  height: 100%;
-  width: 33%;
+  height: auto;
+  width: auto;
   border: solid 15px black;
   float: left;
 }
